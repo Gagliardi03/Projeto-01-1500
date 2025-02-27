@@ -10,7 +10,7 @@ import uuid
 load_dotenv()
 
 # OpenAI API Configuration
-client = OpenAI(api_key=("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"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Database connection function
 def get_db():
